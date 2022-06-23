@@ -1,3 +1,16 @@
+# G-VUE Introduction and Disclaimers
+This Repo is modified from https://github.com/peteanderson80/Matterport3DSimulator to perform Room to Room navigation task as part of the 
+**General-purpose Vision Understanding Evaluation (G-VUE)** benchmark. It is only published for the convinience of the benchmark users to 
+avoid manually editing a few lines to conform to OpenCV 4 format. Alternatively, the users can clone the original repo and change 
+```
+CV_LOAD_IMAGE_ANYDEPTH -> cv::IMREAD_ANYDEPTH
+```
+on line 59 in src/lib/NavGraph.cpp, and
+```
+CV_L2 -> CV_32F
+```
+on line 379 in src/test/main.cpp
+
 # Matterport3D Simulator
 AI Research Platform for Reinforcement Learning from Real Panoramic Images.
 
